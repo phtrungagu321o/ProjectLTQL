@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuanLiPhongKaraokeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Bill">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateTimeCheckIn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DateTimeCheckOut" Type="DateTime" Precision="3" />
+    <Property Name="idRoom" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="DisCount" Type="Int32" />
+    <Property Name="ToTalTime" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PRiceOldTime" Type="Double" />
+    <Property Name="totalPrice" Type="Double" />
+    <Property Name="CheckSwitch" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="QuanLiPhongKaraokeEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bills" EntityType="Self.Bill" />
+  </EntityContainer>
+</Schema>

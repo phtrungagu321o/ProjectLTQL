@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuanLiPhongKaraokeModelStoreContainer" CdmEntityContainer="QuanLiPhongKaraokeEntities1">
+    <EntitySetMapping Name="Bills">
+      <EntityTypeMapping TypeName="QuanLiPhongKaraokeModel.Bill">
+        <MappingFragment StoreEntitySet="Bill">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="DateTimeCheckIn" ColumnName="DateTimeCheckIn" />
+          <ScalarProperty Name="DateTimeCheckOut" ColumnName="DateTimeCheckOut" />
+          <ScalarProperty Name="idRoom" ColumnName="idRoom" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="DisCount" ColumnName="DisCount" />
+          <ScalarProperty Name="ToTalTime" ColumnName="ToTalTime" />
+          <ScalarProperty Name="PRiceOldTime" ColumnName="PRiceOldTime" />
+          <ScalarProperty Name="totalPrice" ColumnName="totalPrice" />
+          <ScalarProperty Name="CheckSwitch" ColumnName="CheckSwitch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuanLiPhongKaraokeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Bill">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DateTimeCheckIn" Type="datetime" Nullable="false" />
+    <Property Name="DateTimeCheckOut" Type="datetime" />
+    <Property Name="idRoom" Type="int" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="DisCount" Type="int" />
+    <Property Name="ToTalTime" Type="nvarchar" MaxLength="100" />
+    <Property Name="PRiceOldTime" Type="float" />
+    <Property Name="totalPrice" Type="float" />
+    <Property Name="CheckSwitch" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="QuanLiPhongKaraokeModelStoreContainer">
+    <EntitySet Name="Bill" EntityType="Self.Bill" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
